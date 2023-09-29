@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>貪吃蛇遊戲</title>
+  <style>
+    #game-board {
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      position: relative;
+    }
+
+    .grid-cell {
+      width: 10px;
+      height: 10px;
+      background-color: #eee;
+      position: absolute;
+      border: 1px solid #ddd; 
+    }
+
+    .grid-cell:not(:last-child) {
+      margin-right: 1px;
+    }
+
+    .grid-cell:nth-child(10n) {
+      margin-bottom: 1px;
+    }
+
+  </style>
+</head>
+<body>
+  <canvas id="game-board"></canvas>
+  <div id="score">分數: 0</div>
+  <audio id="eatSound" src="eat.mp3"></audio>
+  <audio id="levelUpSound" src="levelUp.mp3"></audio>
+  <button id="startButton">開始</button>
+  <button id="pauseButton" disabled>暫停</button>
+  <a href="index.html">返回主頁面</a></li>
+  <script>
+    const canvas = document.getElementById('game-board');
+    const context = canvas.getContext('2d');
+
+    // 定義遊戲狀態變數
+    let isgameLoop = false;
+
+    // 定義貪吃蛇的起始位置和速度
+    const snake = [{ x: 10, y: 10 }];
+    const cellSize = 10;
+    let direction = 'right';
+
+    // 定義食物的位置
+    let food = { x: 5, y: 5 };
+    // 設定遊戲分數
+    let score = 0; 
+    // 設定遊戲速度
+    let speed = 500;
+
+    // 遊戲主循環
+    function gameLoop() {
+      if (!isgameLoop) {
+        moveSnake();
+        checkCollision();
+        eatFood();
+        drawGameBoard();
+        updateScoreDisplay(); // 更新分數顯示
+        setTimeout(gameLoop, speed);
+      }
+    }
+
+
+    // 播放等級提升音效
+    function playLevelUpSound() {
+      const levelUpSound = document.getElementById('levelUpSound');
+      levelUpSound.play();
+    }
+
+    // 移動貪吃蛇
+    function moveSnake() {
+      let newX = snake[0].x;
+      let newY = snake[0].y;
+
+      if (direction === 'right') {
+        newX += 1;
+      } else if (direction === 'left') {
+        newX -= 1;
+      } else if (direction === 'up') {
+        newY -= 1;
+      } else if (direction === 'down') {
+        newY += 1;
+      }
+
+      snake.unshift({ x: newX, y: newY });
+    }
+
+    // 檢查碰撞
+    function checkCollision() {
+      // 撞牆
+      if (
+        snake[0].x < 0 ||
+        snake[0].x >= canvas.width / cellSize ||
+        snake[0].y < 0 ||
+        snake[0].y >= canvas.height / cellSize
+      ) {
+        alert('遊戲結束');
+        window.location.reload();
+      }
+
+      // 撞自己
+      for (let i = 1; i < snake.length; i++) {
+        if (snake[i].x === snake[0].x && snake[i].y === snake[0].y) {
+          alert('遊戲結束');
+          window.location.reload();
+        }
+      }
+    }
+
+    // 吃食物
+    function eatFood() {
+        if (snake[0].x === food.x && snake[0].y === food.y) {
+          // 貪吃蛇吃到了食物
+          food.x = Math.floor(Math.random() * (canvas.width / cellSize));
+          food.y = Math.floor(Math.random() * (canvas.height / cellSize));
+          score += 5; // 每吃到一個食物加5分
+        
+          // 播放音效
+          const eatSound = document.getElementById('eatSound');
+          eatSound.play();
+        
+          // 每增加10分，加快遊戲速度
+          if (score % 10 === 0) {
+            speed -= 50; // 減少速度以加快遊戲
+            playLevelUpSound()
+          }
+      
+          // 更新分數顯示
+          updateScoreDisplay();
+        } else {
+          // 沒有吃到食物，移除尾巴
+          snake.pop();
+        }
+    }
+
+
+    // 繪製遊戲畫面
+    function drawGameBoard() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+    
+        // 畫網格
+        for (let x = 0; x < canvas.width / cellSize; x++) {
+          for (let y = 0; y < canvas.height / cellSize; y++) {
+            context.fillStyle = x % 2 === y % 2 ? '#eee' : '#fff';
+            context.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
+          }
+        }
+    
+        // 畫食物
+        context.fillStyle = 'red';
+        context.fillRect(food.x * cellSize, food.y * cellSize, cellSize, cellSize);
+    
+        // 畫貪吃蛇
+        snake.forEach((segment, index) => {
+            context.fillStyle = index === 0 ? 'black' : 'green';
+            context.fillRect(segment.x * cellSize, segment.y * cellSize, cellSize, cellSize);
+        });
+    }
+
+    //更新分數
+    function updateScoreDisplay() {
+        const scoreElement = document.getElementById('score');
+        scoreElement.textContent = `分數: ${score}`;
+    }
+
+    // 獲取按鈕元素
+    const startButton = document.getElementById('startButton');
+    const pauseButton = document.getElementById('pauseButton');
+    let isGameRunning = false;
+    
+    // 開始按鈕的事件監聽器
+    startButton.addEventListener('click', () => {
+      if (!isGameRunning) {
+        startGame();
+        startButton.disabled = true;
+        pauseButton.disabled = false;
+        isGameRunning = true;
+      }
+    });
+
+    // 暫停按鈕的事件監聽器
+    pauseButton.addEventListener('click', () => {
+      if (isGameRunning) {
+        pauseGame();
+        startButton.disabled = false;
+        pauseButton.disabled = true;
+        isGameRunning = false;
+      }
+    });
+
+    // 開始遊戲
+    function startGame() {
+      isgameLoop = false;
+      gameLoop();
+    }
+
+    // 暫停遊戲
+    function pauseGame() {
+      isgameLoop = true
+    }
+
+    // 監聽方向鍵事件
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight' && direction !== 'left') {
+        direction = 'right';
+      } else if (event.key === 'ArrowLeft' && direction !== 'right') {
+        direction = 'left';
+      } else if (event.key === 'ArrowUp' && direction !== 'down') {
+        direction = 'up';
+      } else if (event.key === 'ArrowDown' && direction !== 'up') {
+        direction = 'down';
+      }
+    });
+  </script>
+</body>
+</html>
