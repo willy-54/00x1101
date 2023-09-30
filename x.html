@@ -1,41 +1,161 @@
 <!DOCTYPE html>
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
   <title>貪吃蛇遊戲</title>
   <style>
-    #game-board {
-      width: 300px;
-      height: 300px;
-      border: 1px solid black;
-      position: relative;
-    }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f2f2f2;
+      }
 
-    .grid-cell {
-      width: 10px;
-      height: 10px;
-      background-color: #eee;
-      position: absolute;
-      border: 1px solid #ddd; 
-    }
+      .control-row {
+        display: flex;
+        justify-content: center;
+      }
 
-    .grid-cell:not(:last-child) {
-      margin-right: 1px;
-    }
+      .arrow-button {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #0074e4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
 
-    .grid-cell:nth-child(10n) {
-      margin-bottom: 1px;
-    }
+      .arrow-button:hover {
+        background-color: #0056b3;
+      }
 
+      #score {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      
+      #game-board {
+        width: 75%;
+        height: 45vw;
+        border: 2px solid #000;
+        position: relative;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .grid-cell {
+        position: absolute;
+        border: 1px solid #ddd;
+        background-color: #eee;
+      }
+
+      .grid-cell:not(:last-child) {
+        margin-right: 1px;
+      }
+
+      .grid-cell:nth-child(10n) {
+        margin-bottom: 1px;
+      }
+
+      #controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #0074e4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3; 
+      }
+
+      #text {
+        margin-top: -580px;
+      }
+
+      #score,
+      #audio,
+      #startButton,
+      #pauseButton,
+      #index {
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        #game-board {
+          width: 80%;
+          height: 80vw;
+        }
+      
+        .grid-cell {
+          width: 8px;
+          height: 8px;
+        }
+      
+        #controls {
+          flex-direction: column;
+        }
+
+        button {
+          margin: 5px 0;
+          width: 100%;
+        }       
+      
+        #text {
+          margin-right: 5%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        #game-board {
+          width: 100%;
+          height: 100vw;
+        }
+      
+        .grid-cell {
+          width: 5px;
+          height: 5px;
+        }
+      }
   </style>
 </head>
 <body>
   <canvas id="game-board"></canvas>
-  <div id="score">分數: 0</div>
-  <audio id="eatSound" src="mp3/eat.mp3"></audio>
-  <audio id="levelUpSound" src="mp3/levelUp.mp3"></audio>
-  <button id="startButton">開始</button>
-  <button id="pauseButton" disabled>暫停</button>
-  <a href="index.html">返回主頁面</a></li>
+
+  <div id="text">
+    <div id="score">分數: 0</div>
+    <audio id="eatSound" src="eat.mp3"></audio>
+    <audio id="levelUpSound" src="levelUp.mp3"></audio>
+    <button id="startButton">開始</button>
+    <button id="pauseButton" disabled>暫停</button>
+    <button id="index"><a href="index.html">返回主頁面</a></button>
+
+
+    <div class="control-row">
+      <button id="upButton" class="arrow-button">↑</button>
+    </div>
+    <div class="control-row">
+      <button id="leftButton" class="arrow-button">←</button>
+      <button id="downButton" class="arrow-button">↓</button>
+      <button id="rightButton" class="arrow-button">→</button>
+    </div>
+  </div>
+
   <script>
     const canvas = document.getElementById('game-board');
     const context = canvas.getContext('2d');
@@ -74,7 +194,53 @@
       levelUpSound.play();
     }
 
+
+    // 移動貪吃蛇 手機
+
+    document.getElementById('upButton').addEventListener('click', handleButtonClick);
+    document.getElementById('downButton').addEventListener('click', handleButtonClick);
+    document.getElementById('leftButton').addEventListener('click', handleButtonClick);
+    document.getElementById('rightButton').addEventListener('click', handleButtonClick);
+
+    function handleButtonClick(event) {
+      const buttonId = event.target.id;
+      if (buttonId === 'upButton' && direction !== 'down') {
+        direction = 'up';
+      } else if (buttonId === 'downButton' && direction !== 'up') {
+        direction = 'down';
+      } else if (buttonId === 'leftButton' && direction !== 'right') {
+        direction = 'left';
+      } else if (buttonId === 'rightButton' && direction !== 'left') {
+        direction = 'right';
+      }
+    }
+
     // 移動貪吃蛇
+    document.getElementById('upButton').addEventListener('click', () => {
+      if (direction !== 'down') {
+        direction = 'up';
+      }
+    });
+    
+    document.getElementById('downButton').addEventListener('click', () => {
+      if (direction !== 'up') {
+        direction = 'down';
+      }
+    });
+    
+    document.getElementById('leftButton').addEventListener('click', () => {
+      if (direction !== 'right') {
+        direction = 'left';
+      }
+    });
+    
+    document.getElementById('rightButton').addEventListener('click', () => {
+      if (direction !== 'left') {
+        direction = 'right';
+      }
+    });
+
+
     function moveSnake() {
       let newX = snake[0].x;
       let newY = snake[0].y;
