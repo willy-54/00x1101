@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>生機三力學題庫</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <h1>生機三力學題庫</h1>
+    <button onclick="showQuestions()">題目</button>
+    <button onclick="startQuiz()">測驗</button>
+
+    <div id="questionContainer" style="display: none;">
+        <h2>題目</h2>
+        <div id="questionContent"></div>
+        <ul id="optionsList"></ul>
+    </div>
+
+    <div id="quizContainer" style="display: none;">
+        <h2>測驗</h2>
+        <p id="quizQuestion"></p>
+        <ul id="quizOptionsList"></ul>
+        <button id="quizSubmitButton" onclick="calculateScore()">提交答案</button>
+        <button onclick="previousQuestion()">上一題</button>
+        <button onclick="nextQuestion()">下一題</button>
+        <button id="resetButton" onclick="resetQuiz()">重新測試</button>
+        <p id="quizResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #007aff;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#questionContainer, #quizContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#questionContent, #quizQuestion {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#quizSubmitButton, #resetButton {
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#quizResult {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    border: 2px solid #007aff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked {
+    background-color: #007aff;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+/* 在较小的屏幕上减小按钮和文本的大小 */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    
+    #questionContent, #quizQuestion {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    
+    #quizSubmitButton, #resetButton {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-top: 16px;
+    }
+    
+    #quizResult {
+        font-size: 18px;
+        margin-top: 16px;
+    }
+    
+    input[type="radio"] {
+        border: 2px solid #007aff;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+}
+
+/* 在非常小的屏幕上进一步减小按钮和文本的大小 */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 8px;
+    }
+    
+    #questionContent, #quizQuestion {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    #quizSubmitButton, #resetButton {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin-top: 12px;
+    }
+    
+    #quizResult {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    
+    input[type="radio"] {
+        border: 2px solid #007aff;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        margin-right: 6px;
+    }
+}
