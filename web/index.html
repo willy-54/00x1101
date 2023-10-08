@@ -3,14 +3,15 @@
 <head>
     <title>生機三力學題庫</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5815678231238003"
-     crossorigin="anonymous"></script>
 </head>
 <body>
     
     <h1>生機三力學題庫</h1>
     <button onclick="showQuestions()">題目</button>
     <button onclick="startQuiz()">測驗</button>
+    <label for="randomizeCheckbox">隨機題目：</label>
+    <input type="checkbox" id="randomizeCheckbox">
+
 
     <div id="questionContainer" style="display: none;">
         <h2>題目</h2>
@@ -27,6 +28,7 @@
         <button onclick="nextQuestion()">下一題</button>
         <button id="resetButton" onclick="resetQuiz()">重新測試</button>
         <p id="quizResult"></p>
+        <p id="score">答對數量: 0/40</p>
     </div>
 
     <script src="script.js"></script>
