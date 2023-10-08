@@ -403,7 +403,9 @@ var questions = [
 
 var currentQuestionIndex = 0;
 var currentQuizQuestion = 0;
+var correctAnswersCount = 0;
 var userAnswers = [];
+var isRandomizeEnabled = false;
 
 function showQuestions() {
     document.getElementById("questionContainer").style.display = "block";
@@ -446,7 +448,24 @@ function displayAllQuestions() {
 function startQuiz() {
     document.getElementById("questionContainer").style.display = "none";
     document.getElementById("quizContainer").style.display = "block";
+    
+    isRandomizeEnabled = document.getElementById("randomizeCheckbox").checked;
+    
+    if (isRandomizeEnabled) {
+        shuffleQuestions();
+    }
+    
+    currentQuizQuestion = 0;
     displayQuizQuestion();
+}
+
+function shuffleQuestions() {
+    for (var i = questions.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = questions[i];
+        questions[i] = questions[j];
+        questions[j] = temp;
+    }
 }
 
 function previousQuestion() {
@@ -513,17 +532,20 @@ function calculateScore() {
             } else if (questionObj.correctAnswer === 'D') {
                 listItem += `<span style="color:blue;"> (正確答案:  ${questionObj.options[3]})`
             }
+        } else {
+            correctAnswersCount++;
         }
 
         listItem += "</li>";
 
         resultContainer.innerHTML += listItem;
-
     }
 
     resultContainer.innerHTML += "</ul>";
-}
 
+    var scoreElement = document.getElementById("score");
+    scoreElement.textContent = "答對數量: " + correctAnswersCount + "/40";
+}
 
 function resetQuiz() {
     currentQuizQuestion = 0;
