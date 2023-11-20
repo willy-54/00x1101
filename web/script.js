@@ -1,404 +1,415 @@
 var questions = [
     {
-        "question": "1. 研究物體之運動而不計其影響運動之因素的科學稱為",
+        "question": "1. 下列何種摩擦力最小？",
         "options": [
-            "A. 動力學",
-            "B. 靜力學",
-            "C. 運動學",
-            "D. 材料力學"
+            "A. 最大靜摩擦",
+            "B. 滑動摩擦 ",
+            "C. 滾動摩擦",
+            "D. 極限摩擦"
         ],
         "correctAnswer": "C"
     },
     {
-        "question": "2. 對力學之研究,通常可分為三部份,即剛體力學、非剛體力學及",
+        "question": "2. 何種作用不是藉由摩擦力達到傳動的目的？",
         "options": [
-            "A. 靜力學",
-            "B. 動力學",
-            "C. 材料力學",
-            "D. 流體力學"
+            "A. 繩輪傳動",
+            "B. 摩擦輪傳動",
+            "C. 皮帶輪傳動 ",
+            "D. 凸緣聯結器傳動"
         ],
         "correctAnswer": "D"
     },
     {
-        "question": "3. 在靜力學的研討範圍內,均將受力物體假設為",
+        "question": "3. 下列敘述，何者正確？",
         "options": [
-            "A. 彈性體",
-            "B. 剛體",
-            "C. 非剛體",
-            "D. 變形體"
-        ],
-        "correctAnswer": "B"
-    },
-    {
-        "question": "4. 力的觀念是",
-        "options": [
-            "A. 力可以單獨存在",
-            "B. 任何一物體都有力之表現",
-            "C. 兩物體間才會有力之表現",
-            "D. 力是一種能量"
+            "A. 摩擦力與接觸面的正壓力成反比",
+            "B. 接觸面積愈大摩擦力愈大",
+            "C. 摩擦係數的範圍為0＜μ＜∞",
+            "D. 物體的運動速度愈大摩擦力愈大"
         ],
         "correctAnswer": "C"
     },
     {
-        "question": "5. 力之傳遞可經由接觸或不接觸,下列何者為不經接觸傳遞之力?",
+        "question": "4. 靜摩擦係數等於摩擦角的",
         "options": [
-            "A. 桌椅對地板之壓力",
-            "B. 汽缸中蒸氣對活塞之推力",
-            "C. 摩擦力",
-            "D. 磁力"
+            "A. 正弦值",
+            "B. 餘弦值",
+            "C. 正切值",
+            "D. 餘弦值"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "5. 如圖所示，將一重量為30N之物體A置於一斜面上，其兩端分別用兩彈簧加以支撐，並維持靜力平衡，若彈簧一與彈簧二之受力狀態分別為受4N之壓力與8N之拉力，試問此時物體A所受之摩擦力為多少N？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176127560904622094/image.png?ex=656dbd25&is=655b4825&hm=45d38bf065616a0a80584010d518d7a4af6d4d47b01f3f79391ff64f0507ee0e&",
+        "options": [
+            "",
+            "A. 3",
+            "B. 4",
+            "C. 18",
+            "D. 22"
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "question": "6. 當物體置於平面，受水平推力P作用，令物體與平面之間摩擦力為f，如圖所示為水平推力P與摩擦力f之關係示意圖，下列敘述何者正確？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176133826464976946/image.png?ex=656dc2fb&is=655b4dfb&hm=ba1513fae0d796a003dd940a2821a9c98191971720c0b228773584c0b6092e82&",
+        "options": [
+            "A. 在區間(I)，物體是運動的",
+            "B. fb是最大靜摩擦力",
+            "C. fa是動摩擦力",
+            "D. θ角度一定是45°"
         ],
         "correctAnswer": "D"
     },
     {
-        "question": "6. 下列何者屬於向量?",
+        "question": "7. 如圖所示，一物體置於平板上，將平板逐漸升高，當上升角度為45°時，物體開始向下滑動，則此時物體與平板間之靜摩擦係數為何？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176138312789008394/image.png?ex=656dc729&is=655b5229&hm=cf71e4459ff612b2ee8332f1a1dc22e0eb0464251f47f7c196db96a8b4a50f0a&",
         "options": [
-            "A. 時間",
-            "B. 長度",
-            "C. 質量",
-            "D. 重量"
+            "A. 0.7",
+            "B. 0.8",
+            "C. 0.9",
+            "D. 1.0"
         ],
         "correctAnswer": "D"
     },
     {
-        "question": "7.質量1千克的物體,在緯度45度的海平面上所受的地心引力之大小為",
+        "question": "8. 兩物體間，由滑動摩擦變為滾動摩擦，對摩擦力有什麼影響？",
         "options": [
-            "A. 牛頓",
-            "B. 1公斤重",
-            "C. 9.8公斤重",
-            "D. 1磅重"
+            "A. 變大",
+            "B. 變小",
+            "C. 不變",
+            "D. 不一定"
         ],
         "correctAnswer": "B"
     },
     {
-        "question": "8.一質點上同時承受數個外力,若以單一力量代表該質點所承受上述外力之總和,此係利用 下列何種方法?",
+        "question": "9. 有關摩擦下列何者正確？",
         "options": [
-            "A. 力量的分解",
-            "B. 力量的合成",
-            "C. 力偶的合成",
-            "D. 力矩的分解"
+            "A. 物體與接觸面之摩擦力恆為定值，與物體運動狀態無關",
+            "B. 摩擦力之方向與物體運動方向恆相反",
+            "C. 動摩擦係數恆大於最大靜摩擦係數",
+            "D. 摩擦力與接觸面積成正比"
         ],
         "correctAnswer": "B"
     },
     {
-        "question": "9.當作用力之作用線與轉軸平行時,則其轉矩為",
+        "question": "10. 有關摩擦力與作用於物體之外力的關係，下列敘述何者正確？",
+        "options": [
+            "A. 一般而言，動摩擦係數大於最大靜摩擦係數",
+            "B. 當外力增加時，此時摩擦力即等於動摩擦係數",
+            "C. 當外力增加至物體即將發生移動時，此時的摩擦力稱為最大動摩擦係數",
+            "D. 當物體產生滑動狀態時，此時的摩擦力較最大靜摩擦力小"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "11. 一物體重量為W置於水平面上，靜摩擦係數為μ，若物體受一水平拉力，在物體仍然靜止未達滑動之前，其摩擦力之大小",
+        "options": [
+            "A. 等於μW",
+            "B. 比拉力小",
+            "C. 與此拉力相等",
+            "D. 比拉力大"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "12. 下列有關摩擦力之敘述，何者正確？",
+        "options": [
+            "A. 物體與摩擦面接觸面積越大摩擦力越大",
+            "B. 物體靜止時並無摩擦力",
+            "C. 摩擦力與物體運動方向平行",
+            "D. 天氣越熱摩擦力越小"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "13. 下列敘述何者正確？",
+        "options": [
+            "A. 動摩擦係數大於靜摩擦係數",
+            "B. 靜止角正切值等於靜摩擦係數",
+            "C. 接觸面越大，則摩擦力也越大",
+            "D. 靜摩擦力等於靜摩擦係數乘以正向力"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "14. 關於乾燥表面間的摩擦特性，依庫倫(Coulomb)之研究結果，下列敘述何者錯誤？",
+        "options": [
+            "A. 最大靜摩擦力與接觸面之正壓力大小成正比",
+            "B. 動摩擦力與接觸面正壓力大小成正比",
+            "C. 兩物體接觸面間之最大靜摩擦力與接觸面積大小成正比",
+            "D. 二物體之接觸面愈粗糙，其摩擦係數愈大，摩擦力也愈大"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "15. 有關乾摩擦下列敘述何者不正確？",
+        "options": [
+            "A. 動摩擦係數與滑動速度無關",
+            "B. 摩擦力與接觸面積大小無關",
+            "C. 摩擦力與接觸正壓力成正比",
+            "D. 動摩擦係數大於最大靜摩擦係數"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "16. 兩相互接觸之物體，其摩擦力之大小與下列何者成正比？",
+        "options": [
+            "A. 接觸面積之大小",
+            "B. 接觸面間正壓力之大小",
+            "C. 滑動速度之快慢",
+            "D. 接觸時間之長短"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "17. 下列有關摩擦的敘述，哪一個正確？",
+        "options": [
+            "A. 接觸面越大，則摩擦力越大",
+            "B. 靜摩擦力等於靜摩擦係數乘以正壓力",
+            "C. 螺旋之導程角α，摩擦角φ，當φ＞α時螺旋起重機才可使用",
+            "D. 動摩擦力大於最大靜摩擦力"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "18. 下列有關摩擦力之敘述，何者錯誤？",
+        "options": [
+            "A. 摩擦力的大小與接觸面的大小無關",
+            "B. 摩擦力的大小與接觸面的乾濕程度無關",
+            "C. 摩擦力的大小與接觸面的材質有關",
+            "D. 摩擦力的大小與接觸面的粗糙度有關"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "19. 下列何者敘述何者正確？",
+        "options": [
+            "A. 摩擦力之方向與物體運動方向相同",
+            "B. 接觸面越大，則摩擦力也越大",
+            "C. 靜止角正切值等於靜摩擦係數",
+            "D. 靜摩擦力等於靜摩擦係數除以正向力"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "20. 下列有關摩擦之敘述，何者錯誤？",
+        "options": [
+            "A. 動摩擦係數小於靜摩擦係數",
+            "B. 摩擦角愈大，摩擦力則愈大",
+            "C. 摩擦力與接觸面大小無關",
+            "D. 靜止角和摩擦角常不相等"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "21. 下列何者不是直線運動？",
+        "options": [
+            "A. 等加速度運動",
+            "B. 等減速度運動",
+            "C. 自由落體",
+            "D. 拋射體運動"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "22. 下列何種物理量不是運動學討論的範圍？",
+        "options": [
+            "A. 位移",
+            "B. 速度",
+            "C. 力",
+            "D. 時間"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "23. 某人在半徑為r的圓周上繞了一圈，回到原點，則其 ( 位移 #小貼心) 為",
         "options": [
             "A. 零",
-            "B. 無限大",
-            "C. 不一定",
-            "D. 與力臂成反比"
+            "B. 2πr",
+            "C. πr",
+            "D. r"
         ],
         "correctAnswer": "A"
     },
     {
-        "question": "10.物體轉動之難易,依其__而定",
+        "question": "24. 某人在半徑為r的圓周上繞了一圈，回到原點，則其 ( 路徑 #小貼心) 為",
         "options": [
-            "A. 力的大小",
-            "B. 力矩的大小",
-            "C. 力的方向",
-            "D. 力的著力點"
+            "A. 零",
+            "B. 2πr",
+            "C. πr",
+            "D. r"
         ],
         "correctAnswer": "B"
     },
     {
-        "question": "11.下列有關力偶之敘述,何者錯誤?",
+        "question": "25. 一物體的速度V與時間t的關係，如圖所示，下列敘述何者錯誤？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176144509889949776/image.png?ex=656dccee&is=655b57ee&hm=9011de6b9e7c322250d5903776656af766e2f910016019f1bfa99b06db93bc03&",
         "options": [
-            "A. 力偶是由兩個大小相等,方向相反,且不共線之二平行力所形成",
-            "B. 力偶矩之大小隨力矩軸中心位置之移動而改變",
-            "C. 力偶之合力為零",
-            "D. 力偶是向量,可適用向量之加法法則。"
+            "A. AB段表示為等加速度運動",
+            "B. BC段表示為等速度運動",
+            "C. AB段表示位移和時間t的一次方成正比",
+            "D. BC段表示加速度為零"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "26. A、B兩車在同一條筆直公路上行駛且在同一地點，但不同時出發，兩車的速度(V)及時間(t)的關後如圖所示，則下列敘述何者錯誤？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176145088661950524/image.png?ex=656dcd78&is=655b5878&hm=534f6580881a28e8211674277ad1b6aea353cc05e44c8ff9d2abd84fbd49e4db&",
+        "options": [
+            "A. A、B兩車皆做等加速度運動",
+            "B. 甲點表示A、B兩車在此時間會合",
+            "C. B車加速度大於A車",
+            "D. A車先出發；B車再跟著出發"
         ],
         "correctAnswer": "B"
     },
     {
-        "question": "12.某一力系之合力結果為 2F=0,∑MA≠0 (A為平面上任意點),則此力系合力為何?",
+        "question": "27. 自由落體，落下時間經歷一秒及經歷二秒的距離比為",
         "options": [
-            "A. 一力偶",
-            "B. 一單力",
-            "C. 力系平衡",
-            "D. 零"
+            "A. 1：2",
+            "B. 1：3",
+            "C. 1：4",
+            "D. 1：5 "
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "28. 自由落體是",
+        "options": [
+            "A. 等速運動",
+            "B. 等加速運動",
+            "C. 減速運動",
+            "D. 變加速運動 "
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "29. 若v代表速度，a為加速度，S為位移，t表時間，則下列哪一個運動方式與圖相同？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176146026311196752/image.png?ex=656dce58&is=655b5958&hm=4466f9be1df48dfbea241556b2e0db8e1fdbf5378f261bd70cf186b8baf870e0&",
+        "options": [
+            "A. https://cdn.discordapp.com/attachments/1129030772154708029/1176146119781265498/image.png?ex=656dce6e&is=655b596e&hm=9eb88b5aaea6c45453d938c69aa13ef656e282c019396e90a07d789563088994&",
+            "B. https://cdn.discordapp.com/attachments/1129030772154708029/1176146199070396446/image.png?ex=656dce81&is=655b5981&hm=e9a258bbf58568264e58fc7f628eac08041c61caad91168904c5b3e71d9d170e&",
+            "C. https://cdn.discordapp.com/attachments/1129030772154708029/1176146291651248218/image.png?ex=656dce97&is=655b5997&hm=580d340a63b882af120c5fb787b3e73089d8fac5d848c08819e7f843f16f0412&",
+            "D. https://cdn.discordapp.com/attachments/1129030772154708029/1176146370189602927/image.png?ex=656dceaa&is=655b59aa&hm=cebe351158e7dbb26f5f8a88ef139d0259cdad440a9a1bcefa2b481c18c65395&"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "30. 如圖，一物由靜止，先後自同一高度而斜度不同的光滑斜面，滑至斜面底端時，則",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176146674398269470/image.png?ex=656dcef2&is=655b59f2&hm=025ce53dac88c1995f7ddac625c1fc4dc48dce6239ae2d5acf8f23a23d3fdda0&",
+        "options": [
+            "A. 所需時間相同",
+            "B. 末速相同",
+            "C. 斜面長者末速較大",
+            "D. 斜面短者末速較大"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "31. 如圖所示，一火車沿直線，自甲站開至乙站，其位置時間圖中，代表等加速度運動的哪一段曲線？",
+        "URL": "https://cdn.discordapp.com/attachments/1176146945673285653/1176147602417393664/image.png?ex=656dcfd0&is=655b5ad0&hm=8003b428f9cf5bc8bf6a04d0fd8221c808e777c7fb66b56023d4dddced97d9aa&",
+        "options": [
+            "",
+            "A. OA",
+            "B. AB",
+            "C. BC",
+            "D. OB"
         ],
         "correctAnswer": "A"
     },
     {
-        "question": "13.一物體受兩力作用而平衡時,則兩力必 1.大小相等 2.方向相反 3.力必共線,上述正確者為",
+        "question": "32. 在沒有摩擦情況下，物體自同一高度，由靜止沿著不同斜度的光滑斜面下滑，則下列敘述何者正確？",
         "options": [
-            "A. 1、2",
-            "B. 1、3",
-            "C. 2、3",
-            "D. 1、2、3"
-        ],
-        "correctAnswer": "D"
-    },
-    {
-        "question": "14.下列敘述何者錯誤?",
-        "options": [
-            "A. 任何非均質物體,其質心與形心必合而為一",
-            "B. 一個均質的球體或其球面之形心,即 其球心",
-            "C. 一個物體的重心,可視為物體全部重量均集中於該點",
-            "D. 將一物體懸吊空中,其重心必在重力作用線上"
-        ],
-        "correctAnswer": "A"
-    },
-    {
-        "question": "15.下列有關重心、形心、與質心的描述,何者不正確?",
-        "options": [
-            "A. 物體重心的合力的作用線一定會通過該物體的形心",
-            "B. 物體的質心位置可以在物體的外部",
-            "C. 物體的形心座標會因參考座標不同而改變",
-            "D. 對所有物體言,形心與質心位置會在同一點"
-        ],
-        "correctAnswer": "D"
-    },
-    {
-        "question": "16.對於剛體的敘述,下列何者錯誤?",
-        "options": [
-            "A. 剛體內各質點間之距離保持不變",
-            "B. 剛體受外力作用後,其形狀、大小皆不變",
-            "C. 力的可傳性原理可適用於剛體",
-            "D. 重型機械鋼鐵機座是剛體"
-        ],
-        "correctAnswer": "D"
-    },
-    {
-        "question": "17.下列何者為正確敘述?",
-        "options": [
-            "A. 靜力學是研究物體受力後速度改變量與時間之關係",
-            "B. 運動學是研究物體運動時,外力與質量的關係",
-            "C. 動力學是研究物體運動與導致運動因素之關係:即力學四要素之間的關係",
-            "D. 材料力學是研究力與剛體之間的關係"
-        ],
-        "correctAnswer": "C"
-    },
-    {
-        "question": "18.研究物體運動狀態之改變及其改變之原因之學問為",
-        "options": [
-            "A. 靜力學",
-            "B. 動力學",
-            "C. 彈力學",
-            "D. 運動學"
+            "A. 物體滑到底端所需的時間均相同",
+            "B. 物體滑到底端的末速均相同",
+            "C. 斜度大者，物體滑到底端的末速大",
+            "D. 斜度大者，物體滑到底端的末速小"
         ],
         "correctAnswer": "B"
     },
     {
-        "question": "19.下列哪一門學科,不能將物體視為剛體?",
+        "question": "33. 由物體運動方程式V＝8t＋1可知其加速度為",
         "options": [
-            "A. 材料力學",
-            "B. 靜力學",
-            "C. 動力學",
-            "D. 運動學"
-        ],
-        "correctAnswer": "A"
-    },
-    {
-        "question": "20.下列何者屬於力的三要素之一?",
-        "options": [
-            "A. 質量",
-            "B. 作用點",
-            "C. 作用時間",
-            "D. 位移"
+            "A. 0",
+            "B. 8",
+            "C. 1",
+            "D. 無法判知"
         ],
         "correctAnswer": "B"
     },
     {
-        "question": "21.下列何者屬於內效應?",
+        "question": "34. 速度與時間之關係如圖，則其為",
+        "URL": "https://cdn.discordapp.com/attachments/1176146945673285653/1176149267975520316/image.png?ex=656dd15d&is=655b5c5d&hm=424677a4333ec9c1ed42d050848f4af9ce41037fd9f0410b35553dc234598ca8&",
         "options": [
-            "A. 旋轉",
-            "B. 位移",
-            "C. 運動",
-            "D. 變形"
+            "A. 等加速度",
+            "B. 變形之等速運動",
+            "C. 等加速度運動及等減速度運動",
+            "D. 等加速度運動及等速運動"
         ],
         "correctAnswer": "D"
     },
     {
-        "question": "22.下列何者為力對物體之外效應?",
+        "question": "35. 物體由靜止自同一高度沿不同斜度之光滑斜面下滑，滑至底端時",
         "options": [
-            "A. 支承反力",
-            "B. 剪力",
-            "C. 應力",
-            "D. 變形"
-        ],
-        "correctAnswer": "A"
-    },
-    {
-        "question": "23.下列之敘述,何者有誤?",
-        "options": [
-            "A. 力的三要素為大小,方向及作用點",
-            "B. 力偶矩是屬於自由向量",
-            "C. 純量是指沒有單位的物理量",
-            "D. 研究物體之運動,常視物體為一質點"
-        ],
-        "correctAnswer": "C"
-    },
-    {
-        "question": "24.下列敘述中何者為錯誤?",
-        "options": [
-            "A. 重量是向量,質量是純量",
-            "B. 物體受外力作用時,體內各質點間之距離不會改變,此物體謂之剛體",
-            "C. 力的三要素是大小、方向、作用時間",
-            "D. 向量可分類為自由向量、滑動向量、固定向量等三種"
-        ],
-        "correctAnswer": "C"
-    },
-    {
-        "question": "25.研究力對物體所產生的內效應時,必須把力當作何種向量處理?",
-        "options": [
-            "A. 滑動向量",
-            "B. 自由向量",
-            "C. 固定向量",
-            "D. 對稱向量"
-        ],
-        "correctAnswer": "C"
-    },
-    {
-        "question": "26.分析靜力學、動力學之作用力可視為何種向量?",
-        "options": [
-            "A. 自由向量",
-            "B. 滑動向量",
-            "C. 固定向量",
-            "D. 以上皆是"
+            "A. 所需時間相同",
+            "B. 末速相同",
+            "C. 斜面長者末速大",
+            "D. 斜面長者末速小"
         ],
         "correctAnswer": "B"
     },
     {
-        "question": "27.使物體產生變形效應之力為",
+        "question": "36. 物體自空中自由落下，設第1秒內所行距離S1，第二秒內所行距離S2，第三秒內行S3，則S1：S2：S3為",
         "options": [
-            "A. 自由向量",
-            "B. 滑動向量",
-            "C. 固定向量",
-            "D. 純量"
-        ],
-        "correctAnswer": "C"
-    },
-    {
-        "question": "28.下列何者非自由向量?",
-        "options": [
-            "A. 角加速度",
-            "B. 角速度",
-            "C. 力矩",
-            "D. 力偶"
-        ],
-        "correctAnswer": "C"
-    },
-    {
-        "question": "29.在 CGS 制中,下列何者為力的國際單位?",
-        "options": [
-            "A. kg-m/sec",
-            "B. kg-m/sec²",
-            "C. g-cm/sec",
-            "D. g-cm/sec²"
+            "A. 1：4：9",
+            "B. 1：2：3",
+            "C. 1：1：1",
+            "D. 1：3：5"
         ],
         "correctAnswer": "D"
     },
     {
-        "question": "30.在MKS 制中,力的國際單位是N(牛頓)x",
+        "question": "37. 自由落體運動初速為零，則下降時間與下降距離的關係為",
         "options": [
-            "A. kg-m/s",
-            "B. g-cm/s",
-            "C. kg-m-s",
-            "D. kg-m/s²"
+            "A. 兩者成正比",
+            "B. 兩者成反比",
+            "C. 時間與距離平方成正比",
+            "D. 時間與距離平方根成正比"
         ],
         "correctAnswer": "D"
     },
     {
-        "question": "31.使質量1仟克的物體,產生1米/秒2之加速度時,所需的力稱為",
+        "question": "38. 物體自由下，其第1秒、第2秒、第3秒所行距離之比為",
         "options": [
-            "A. 1 達因",
-            "B. 1 耳格",
-            "C. 1 牛頓",
-            "D. 1 焦耳"
+            "A. 1：2：3",
+            "B. 1：2：4",
+            "C. 1：3：5",
+            "D. 1：3：6"
         ],
         "correctAnswer": "C"
     },
     {
-        "question": "32.作用於物體的外力,可沿作用線方向改變其作用點,所產生外效應不變,此為力之原理。",
+        "question": "39. 在阿里山上以V0鉛直拋下一石子，同時使一棒球自由落下，則",
         "options": [
-            "A. 內效應",
-            "B. 可傳性",
-            "C. 撓性",
-            "D. 彈性"
+            "A. 兩者同時落地",
+            "B. 石子先落地",
+            "C. 棒球先落地",
+            "D. 如球重大於石子重，則球先落地 "
         ],
         "correctAnswer": "B"
     },
     {
-        "question": "33.質點通常被視為",
+        "question": "40. 關於鉛直上拋，下列何者有誤？ ",
         "options": [
-            "A. 無體積而具有質量之物體",
-            "B. 無體積無質量之物體",
-            "C. 無面積而具有質量之物體",
-            "D. 無面積無質量之物體"
+            "A. 到達最高點時，速度和加速度皆為零",
+            "B. 加速度為負的重力加速度",
+            "C. 上、下",
+            "D. "
         ],
         "correctAnswer": "A"
     },
-    {
-        "question": "34.同平面上兩作用力同時作用於一點,若其合力為最大時,則該二力之夾角為",
-        "options": [
-            "A. 0°",
-            "B. 90°",
-            "C. 120°",
-            "D. 180°"
-        ],
-        "correctAnswer": "A"
-    },
-    {
-        "question": "35.下列有關力偶的敘述,何者錯誤?",
-        "options": [
-            "A. 力偶為作用於一物體之兩力,其大小相等,方向相反,且不在同一直線上之兩平行力",
-            "B. 力偶三要素為力偶矩之大小、力偶旋轉之方向及力偶作用面之方位",
-            "C. 力偶矩之單位與力矩之單位相同",
-            "D. 力偶為一純量"
-        ],
-        "correctAnswer": "D"
-    },
-    {
-        "question": "36. 下列有關力矩之敘述,何者錯誤?",
-        "options": [
-            "A. 與力矩軸平行的力量對此軸之力矩為零",
-            "B. 與力矩軸相交的力量對此軸之力矩為零",
-            "C. 力沿著作用線移動時,會改變力矩之大小",
-            "D. 物體所受力矩愈大,表示此物體轉動的趨勢愈大"
-        ],
-        "correctAnswer": "C"
-    },
-    {
-        "question": "37. 下列有關力偶轉換性的敘述,何者錯誤?",
-        "options": [
-            "A. 力偶可在其作用平面上任意移動或轉動",
-            "B. 若力偶的大小與方向不改變時,力偶的二平行力與其力偶臂可任意改變",
-            "C. 力偶可任意移至與原作用平行之平面上",
-            "D. 力偶的作用面可任意改變"
-        ],
-        "correctAnswer": "D"
-    },
-    {
-        "question": "38.同平面一般力系以力的多邊形與索線多邊形法求解時,當力的多邊形封閉,而索線多邊形 中,首索和尾索互相平行,則合力為",
-        "options": [
-            "A. 一單力",
-            "B. 一力偶",
-            "C. 零",
-            "D. 一力矩"
-        ],
-        "correctAnswer": "B"
-    },
-    {
-        "question": "39.一物體受同平面三力作用保持平衡時，則其作用線必定",
-        "options": [
-            "A. 相交於一點",
-            "B. 相交於二點",
-            "C. 平行",
-            "D. 若不平行，則必相交於一點"
-        ],
-        "correctAnswer": "D"
-    },
-    {
-        "question": "40. 一組同平面之力成平衡時，其必要條件",
-        "options": [
-            "A. 質點自由體圖即是將此質點之受力情形表示於紙上",
-            "B. 質點自由體圖之畫法是以質點為中心,將受力之向量畫出",
-            "C. 力多邊形",
-            "D. 質點自由體圖之力向量必合力及合力偶同時畫出"
-        ],
-        "correctAnswer": "C"
-    }
 ];
 
 var currentQuestionIndex = 0;
@@ -419,31 +430,60 @@ function displayAllQuestions() {
 
     for (var i = 0; i < questions.length; i++) {
         var questionObj = questions[i];
-        
+    
         var questionDiv = document.createElement("div");
-        
+    
         var questionContent = document.createElement("ul");
         var questionText = questionObj.question;
-
+    
         for (var j = 0; j < questionObj.options.length; j++) {
             var option = questionObj.options[j];
+    
+            if (j === 0 && questionObj.URL) {
+                var image = document.createElement("img");
+                image.src = questionObj.URL;
+                image.style.maxWidth = "100%";
+                option = image.outerHTML + '<br>' + option;
+            }
+            
+            if (questionObj.options[j].startsWith("A.") ||
+                questionObj.options[j].startsWith("B.") ||
+                questionObj.options[j].startsWith("C.") ||
+                questionObj.options[j].startsWith("D.")) {
+                
+                var optionParts = questionObj.options[j].split('. ');
+                var optionText = optionParts[1];
+                
+                if (optionText.startsWith("https://cdn.discordapp.com/attachments")) {
+                    var image = document.createElement("img");
+                    image.src = optionText;
+                    image.style.maxWidth = "100%";
+                
+                    option = image.outerHTML;
+                }
+            }
+
             if (option.charAt(0) === questionObj.correctAnswer) {
+                console.log(option.charAt(0));
                 option = '<span style="color:red;">' + option + '</span>';
             }
-            questionText += "<br>" + option;
+    
+            questionText += document.createElement("br").outerHTML + option;
         }
-
-        questionContent.innerHTML = questionText;
-
+    
+        questionContent.innerHTML += questionText;
+    
         questionDiv.appendChild(questionContent);
-        
+    
         questionContainer.appendChild(questionDiv);
-        
+    
         if (i < questions.length - 1) {
             questionContainer.appendChild(document.createElement("br"));
         }
     }
+    
 }
+
 
 function startQuiz() {
     document.getElementById("questionContainer").style.display = "none";
@@ -486,21 +526,33 @@ function displayQuizQuestion() {
     if (currentQuizQuestion < questions.length) {
         var questionObj = questions[currentQuizQuestion];
         document.getElementById("quizQuestion").textContent = questionObj.question;
-        
+
         var optionsList = document.getElementById("quizOptionsList");
         optionsList.innerHTML = "";
-        
+
+        var previousImage = optionsList.parentNode.querySelector("img");
+        if (previousImage) {
+            previousImage.remove();
+        }
+
         for (var i = 0; i < questionObj.options.length; i++) {
             var option = questionObj.options[i];
             var listItem = document.createElement("li");
             var radioButton = '<input type="radio" name="q1" value="' + option.charAt(0) + '"> ';
             listItem.innerHTML = radioButton + option;
-    
+
             listItem.querySelector("input").addEventListener("change", function () {
                 userAnswers[currentQuizQuestion] = this.value;
             });
-    
+
             optionsList.appendChild(listItem);
+        }
+
+        if (questionObj.URL) {
+            var image = document.createElement("img");
+            image.src = questionObj.URL;
+            image.style.maxWidth = "100%";
+            optionsList.parentNode.insertBefore(image, optionsList.nextSibling);
         }
     } else {
         document.getElementById("quizResult").textContent = "測驗完成";
@@ -545,12 +597,4 @@ function calculateScore() {
 
     var scoreElement = document.getElementById("score");
     scoreElement.textContent = "答對數量: " + correctAnswersCount + "/40";
-}
-
-function resetQuiz() {
-    currentQuizQuestion = 0;
-    userAnswers = [];
-    document.getElementById("quizResult").textContent = "";
-    document.getElementById("quizSubmitButton").style.display = "block";
-    displayQuizQuestion();
 }
