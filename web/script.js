@@ -236,6 +236,7 @@ var questions = [
       "question": "24. 如圖所示之滑輪裝置，設滑輪重量忽略，且滑輪與繩之間無摩擦力，已知W＝800N，求繩子A之張力(TA)",
       "URL": "https://cdn.discordapp.com/attachments/1196427238166511717/1196429453652410378/image.png?ex=65b798c2&is=65a523c2&hm=b9144248adf5059c2ef96adbc25b722beb2de7c4779d3aa937f16b296f27bed9&",
       "options": [
+          "",
           "A. 200N",
           "B. 400N",
           "C. 800N",
