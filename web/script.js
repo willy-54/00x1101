@@ -1,421 +1,415 @@
 var questions = [
-  {
-      "question": "1. 下列有關材料比例限度(proportional limit)的敘述，何者錯誤？",
-      "options": [
-          "A. 各種材料之比例限度皆相等",
-          "B. 在比例限度以下，應力與應變成正比關係 ",
-          "C. 材料之比例限度小於其降伏強度",
-          "D. 在比例限度以下，當受力物體之外力去除後，該物體可以完全恢復原狀"
-      ],
-      "correctAnswer": "A"
-  },
-  {
-      "question": "2. 下列有關彈性係數E之敘述，何者錯誤？",
-      "options": [
-          "A. E之單位和應力單位相同",
-          "B. E之值為常數，不因材料之種類而改變",
-          "C. 一般拉伸彈性係數等於壓縮彈性係數 ",
-          "D. 彈性係數E又稱楊氏係數"
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "3. 在彈性限度範圍內，應力應變圖中之曲線斜率愈陡，則材料之彈性係數",
-      "options": [
-          "A. 愈大",
-          "B. 愈小",
-          "C. 相同",
-          "D. 為零"
-      ],
-      "correctAnswer": "A"
-  },
-  {
-      "question": "4. 一般工作應力是以降伏應力除以",
-          "options": [
-          "A. 彈性係數",
-          "B. 蒲松氏比(ν)",
-          "C. 安全因數(n)",
-          "D. 應力集中因子"
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "5. 承受軸向拉力P之圓棒，直徑為D，長度為L，產生彈性變形後軸向伸長量為ä，則圓棒之彈性係數為",
-      "options": [
-          "A. ",
-          "B. ",
-          "C. ",
-          "D. "
-      ],
-      "correctAnswer": "A"
-  },
-  {
-      "question": "6. 已知某鋼索的極限應力為700 N/mm2、斷面積為100 mm2，若該鋼索可承受的最大荷重為7000 N，則該鋼索以極限強度為依據的設計安全因數為多少？",
-      "options": [
-          "A. 10",
-          "B. 12",
-          "C. 15",
-          "D. 16"
-      ],
-      "correctAnswer": "A"
-  },
-  {
-      "question": "7. 有一長方體尺寸為200200100 mm，若受σx500 MPa，σy−200 MPa，σz400 MPa作用，若E200 GPa，0.3，則體積應變為多少？",
-      "options": [
-          "A. 0.014",
-          "B. 0.0014",
-          "C. 0.028",
-          "D. 0.0028",
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "8. 如圖所示，一鋼桿受到單一軸向拉力P作用，此鋼桿由兩段長度相等但斷面不同的圓柱鋼桿組成。已知AB段的斷面積是BC段斷面積的兩倍，若將此兩段圓柱鋼桿長度各減半，在受到相同的單一軸向拉力作用下，則其軸向的總變形量與原先總變形量的比值是多少？",
-      "URL": "https://media.discordapp.net/attachments/1196427238166511717/1221446226118049792/image.png?ex=66129b71&is=66002671&hm=dea98588dc04d17e5ecbe991f6223f855c085b07ececf68b001a5d52254a0df3&=&format=webp&quality=lossless",
-      "options": [
-          "A. 1",
-          "B. 0.75",
-          "C. 0.5",
-          "D. 0.25"
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "9. 如圖所示之升降機，上連鋼纜繩，升降機總負荷狀態為W10 kN，承受拉力P上升加速度為2 m/sec2，鋼纜繩之破壞強度為800 MPa，安全因數為4，試求鋼纜繩之斷面積應為若干mm2？(重力加速度gI0 m/sec2 )",
-      "URL": "https://cdn.discordapp.com/attachments/1196427238166511717/1221446664863354940/image.png?ex=66129bda&is=660026da&hm=268c81176bd03dffb3bb681df19d63a58961aed7ca3024d954c87baf2578aee3&",
-      "options": [
-          "A. 60",
-          "B. 120",
-          "C. 180",
-          "D. 160"
-      ],
-      "correctAnswer": "A"
-  },
-  {
-      "question": "10. 一鋁合金圓桿之原始長度L200mm，蒲松氏比為0.333。若施以軸向拉力P，使圓桿產生軸向伸長ÄL0.36mm及橫向變形ÄD－0.012mm，則此圓桿的原始直徑D的值為多少mm？",
-      "options": [
-          "A. 2.22",
-          "B. 12.20",
-          "C. 20.02",
-          "D. 36.30"
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "11. 有一直徑0.1 m、長度0.5 m之實心鋼棒，其蒲松氏比為0.25，彈性係數為21 GPa，求其體積彈性係數為何？",
-      "options": [
-          "A. 13 GPa",
-          "B. 13.5 GPa",
-          "C. 14 GPa",
-          "D. 14.5 GPa"
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "12. 將書本自裝訂側捲起，未裝訂之一側成斜面排列，是因為紙張滑動，而促成此滑動之力是",
-      "options": [
-          "A. 拉力",
-          "B. 壓力",
-          "C. 剪力",
-          "D. 扭矩"
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "13. 一均質圓柱承受一軸向拉力，則在45°斜截面上之剪應力的特性為",
-      "options": [
-          "A. 最小且等於最大正向應力之半",
-          "B. 最小且等於最大正向應力",
-          "C. 最大且等於最大正向應力之二倍",
-          "D. 最大且等於最大正向應力之半"
-      ],
-      "correctAnswer": "D"
-  },
-  {
-      "question": "14. 如圖所示，斷面積為A且承受軸向拉力P之桿件，若圖示之傾斜面mn上之正向應力及剪應力分別為敘述何者錯誤？",
-      "options": [
-          "A. 在è = 0°時，有最大正向應力，=",
-          "B. 在è = 45°時，= (C)在è= 45°時，有最大剪應力，=",
-          "C. 在è= 45°時，有最大剪應力，=",
-          "D. 在è = 90°時，= 0"
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "15. 某材料承受雙軸向力及時，若，則此材料在45°的斜截面上之最大剪應力為",
-      "options": [
-          "A. ",
-          "B. ",
-          "C. ",
-          "D. "
-      ],
-      "correctAnswer": "A"
-  },
-  {
-      "question": "16. 如圖所示，一正方形桿件(40 mm40 mm)，二端受軸向負荷160 kN作用，試求與橫斷面逆時針成15°之mn截面之剪應力為多少MPa？",
-      "URL": "https://cdn.discordapp.com/attachments/1196427238166511717/1221450654166417468/image.png?ex=66129f91&is=66002a91&hm=07e7a4d1385d7a59f63fac45955afd75d13afe8f57b9cc756143156faa0867c0&",
-      "options": [
-          "A. 20",
-          "B. 25",
-          "C. 30",
-          "D. 35"
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "17. 一正方形之物體,在四邊各承受一剪力F,如圖所示,試問該物體內部剖在45°斜面位置(虛線所示)之剪力為何?",
-      "URL" : "https://media.discordapp.net/attachments/1196427238166511717/1221451082803449967/image.png?ex=66129ff7&is=66002af7&hm=da85f62b168002b4ce36af78f36061fa685a2cb48fe1799a945f77e5c3e7d01e&=&format=webp&quality=lossless",
-      "options": [
-          "A. 2F",
-          "B. F",
-          "C. F2",
-          "D. 0"
-      ],
-      "correctAnswer": "D"
-  },
-  {
-      "question": "18. 某一點之應力如圖所示,則45°傾斜面上之應力",
-      "URL" : "https://cdn.discordapp.com/attachments/1196427238166511717/1221451790365491200/image.png?ex=6612a0a0&is=66002ba0&hm=265a56daa5dafe8ad50dc9699f9a671853a321397a35d0beb407cabd67f5c6d6&",
-      "options": [
-          "A. ",
-          "B. ",
-          "C. ",
-          "D. "
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "19. 某材料之彈性係數E = 200GPa,剪割彈性係數G = 80GPa,則其蒲松式比ν為",
-      "options": [
-          "A. 0.2",
-          "B. 0.25",
-          "C. 0.3",
-          "D. 0.35"
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "20. 如圖所示,利用三個相同之鉚釘將三塊板材接合,若鉚釘之直徑為30 mm,且其鉚釘最大可承受之剪應力為60 MPa,若欲鉚釘不被剪斷,則施力P最大不得超過多少kN?",
-      "URL" : "https://cdn.discordapp.com/attachments/1196427238166511717/1221452411013697626/image.png?ex=6612a134&is=66002c34&hm=9e830afde959e07971317d813866507f753cf39f8b4c5dd7d98a577bf3be2e9f&",
-      "options": [
-          "A. 83",
-          "B. 125",
-          "C. 254",
-          "D. 368"
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "21. 設計一橫斷面積100 mm2的金屬圓桿,兩端承受拉力作用,已知圓桿可承受最大拉應力60 MPa,最大剪應力25 MPa,則容許兩端最大拉力為多少N?",
-      "options": [
-          "A. 5000",
-          "B. 5500",
-          "C. 6000",
-          "D. 6500"
-      ],
-      "correctAnswer": "A"
-  },
-  {
-      "question": "22. 矩形面積如圖所示,則其對x軸的斷面模數為何?",
-      "URL": "https://cdn.discordapp.com/attachments/1196427238166511717/1221452909842006026/image.png?ex=6612a1ab&is=66002cab&hm=fb69caf5ea9764df57c44b24b4ffb1da133422a490057486a799c255f601bdc6&",
-      "options": [
-          "A. ",
-          "B. ",
-          "C. ",
-          "D. "
-      ],
-      "correctAnswer": "D"
-  },
-  {
-      "question": "23. 一圓形截面直徑為d,則圓面積對圓心之極慣性矩為",
-      "options": [
-          "A. ",
-          "B. ",
-          "C. ",
-          "D. "
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "24. 如圖所示,塗色區域對x軸之慣性矩為若干cm4?(TA)",
-      "URL": "https://cdn.discordapp.com/attachments/1196427238166511717/1221453404300382240/image.png?ex=6612a221&is=66002d21&hm=a0c91bed4464196a1f2fd32947087b97a235c7aa4334d2dbbf4d6ed363059000&",
-      "options": [
-          "A. 54",
-          "B. 144",
-          "C. 162",
-          "D. 198"
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "25. 如圖之塗色面積,對形心軸x-x之慣性矩為",
-      "URL": "https://media.discordapp.net/attachments/1196427238166511717/1221453618931302430/image.png?ex=6612a254&is=66002d54&hm=55c0cedc7e3a0d676a271196674fdd230b3a88dc10d7ecaa6206f2b789425aa3&=&format=webp&quality=lossless",
-      "options": [
-          "A. ",
-          "B. ",
-          "C. ",
-          "D. "
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "26. 如圖所示,塗色部分對形心軸之慣性矩為若干mm4?",
-      "URL" : "https://cdn.discordapp.com/attachments/1196427238166511717/1221453884002930788/image.png?ex=6612a293&is=66002d93&hm=e4063967daac2bd32e3547135d4ec07af763feb7f4ce6d548a4b46b2412d14d3&",
-      "options": [
-          "A. Ix=Iy=742",
-          "B. Ix=Iy=803",
-          "C. Ix=Iy=468",
-          "D. Ix=Iy=278"
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "27. 如圖所示斷面,其底部s軸之慣性矩為若干cm4?",
-      "options": [
-          "A. 128",
-          "B. 136",
-          "C. 144",
-          "D. 156 "
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "28. 如圖所示,試求該斷面對x軸的面積慣性矩Ix為多少?",
-      "options": [
-          "A. ",
-          "B. ",
-          "C. ",
-          "D.  "
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "29. 如圖所示之截面,G為其形心,面積為600 mm2。已知其對u-u軸的慣性矩為71250 mm4,則對x軸的慣性矩為多少mm4?",
-      "URL" : "https://cdn.discordapp.com/attachments/1196427238166511717/1221454469406134323/image.png?ex=6612a31f&is=66002e1f&hm=82a7ed4e7b7c092063c86a8ba3b3e3e1a15c6dfcb7e8247def69010a319be5e7&",
-      "options": [
-          "A. 7500",
-          "B. 8750",
-          "C. 10000",
-          "D. 11250 "
-      ],
-      "correctAnswer": "D"
-  },
-  {
-      "question": "30. 如圖所示為樑之橫斷面,試求該斷面對通過形心之水平軸的面積慣性矩為多少?",
-      "URL" : "https://cdn.discordapp.com/attachments/1196427238166511717/1221454731231236156/image.png?ex=6612a35d&is=66002e5d&hm=631b7d9063c2de519b1c9148d7719101f93e055a48802a12407394af1477a091&",
-      "options": [
-          "A. 10 a4",
-          "B. 8.5 a4",
-          "C. 6.5 a4",
-          "D. 4 a4"
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "31. 一矩形樑其斷面寬為b,高為h,若承受一彎矩M,則其最大應力為",
-      "options": [
-          "A. ",
-          "B. ",
-          "C. ",
-          "D. "
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "32. 一懸臂樑受一彎矩M作用,樑材料之彈性係數為E,樑橫斷面之慣性矩為I,則彈性曲線之曲率",
-      "options": [
-          "A. ",
-          "B. ",
-          "C. ",
-          "D. "
-      ],
-      "correctAnswer": "A"
-  },
-  {
-      "question": "33. 於自由端受集中負荷P之懸臂樑,則",
-      "options": [
-          "A. 固定端剪力最大",
-          "B. 自由端彎矩最大",
-          "C. 樑表面剪應力最大",
-          "D. 中性軸剪應力最大"
-      ],
-      "correctAnswer": "D"
-  },
-  {
-      "question": "34. 下列敘述何者錯誤?",
-      "options": [
-          "A. 矩形樑剖面最大剪應力恰為平均剪應力的1.5倍",
-          "B. 矩形樑邊變為原來兩倍,則最大剪應力變為原來四倍",
-          "C. 圓形樑剖面大剪應力恰為平均剪應力的1.33倍",
-          "D. 樑中立軸上具有最大剪應力"
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "35. 如圖所示,承受集中負載P1及P2作用,則其臨界斷面位於",
-      "URL" : "https://cdn.discordapp.com/attachments/1196427238166511717/1221455677248114728/image.png?ex=6612a43f&is=66002f3f&hm=49d4f038ef3e3b6b7256f73f7c2c87dc46c979b681559bd7bea43624c8ac86b2&",
-      "options": [
-          "A. A處",
-          "B. B處",
-          "C. B處",
-          "D. D處"
-      ],
-      "correctAnswer": "C"
-  },
-  {
-      "question": "36. 如圖所示之樑,A點右方1 m處樑斷面上之彎矩為若干N-m?",
-      "URL" : "https://cdn.discordapp.com/attachments/1196427238166511717/1221455860916682862/image.png?ex=6612a46a&is=66002f6a&hm=58e423dc1833bd19071c64a26213dbf57811086b2e381371cd39e45be82e0e18&",
-      "options": [
-          "A. 40",
-          "B. 320",
-          "C. 640",
-          "D. 960"
-      ],
-      "correctAnswer": "A"
-  },
-  {
-      "question": "37. 如圖所示之樑,試求C點之彎矩大小為若干N-m?",
-      "URL" : "https://cdn.discordapp.com/attachments/1196427238166511717/1221456230413897778/image.png?ex=6612a4c2&is=66002fc2&hm=fd9e76eabad84364370d3fc45972dd9bc990de39d7126a07fb5eded3e9b70d5b&",
-      "options": [
-          "A. 110",
-          "B. 220",
-          "C. 330",
-          "D. 450"
-      ],
-      "correctAnswer": "B"
-  },
-  {
-    "question": "38. 在懸臂樑的自由端受一60 N的集中負載與一60 N-m的彎矩負載作用,如圖所示,則此樑的最大彎曲力矩是多少N-m?",
-    "URL": "https://cdn.discordapp.com/attachments/1196427238166511717/1221456625551020112/image.png?ex=6612a521&is=66003021&hm=8655a8d04e5be8cf9862bd5ee7746f47fa068472ca693d9a906b571ad6748925&",
-    "options": [
-        "A. 120",
-        "B. 80",
-        "C. 60",
-        "D. 40 "
-    ],
-    "correctAnswer": "C"
-},
-  {
-      "question": "39. 將一直徑2 mm之鋼線繞於直徑2 m之圓柱上而保持彈性變形。若鋼線之彈性係數E=200 GPa,則在鋼線表面產生之最大彎曲應力約為若干MPa?",
-      "options": [
-          "A. 100",
-          "B. 200",
-          "C. 300",
-          "D. 400"
-      ],
-      "correctAnswer": "B"
-  },
-  {
-      "question": "40. 如圖所示,均質斷面之樑,若其最大彎矩為162 N-m,容許彎曲應力為90 MPa,寬為12 mm,則其最小安全h值應為若干mm?",
-      "URL" : "https://cdn.discordapp.com/attachments/1196427238166511717/1221456819097043095/image.png?ex=6612a54f&is=6600304f&hm=c1e3864bd5875d2e0694b405166ac3d9d1213157f6388a67837647408ea45ed8&",
-      "options": [
-          "A. 25",
-          "B. 30",
-          "C. 40",
-          "D. 45"
-      ],
-      "correctAnswer": "B"
-  },
+    {
+        "question": "1. 下列何種摩擦力最小？",
+        "options": [
+            "A. 最大靜摩擦",
+            "B. 滑動摩擦 ",
+            "C. 滾動摩擦",
+            "D. 極限摩擦"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "2. 何種作用不是藉由摩擦力達到傳動的目的？",
+        "options": [
+            "A. 繩輪傳動",
+            "B. 摩擦輪傳動",
+            "C. 皮帶輪傳動 ",
+            "D. 凸緣聯結器傳動"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "3. 下列敘述，何者正確？",
+        "options": [
+            "A. 摩擦力與接觸面的正壓力成反比",
+            "B. 接觸面積愈大摩擦力愈大",
+            "C. 摩擦係數的範圍為0＜μ＜∞",
+            "D. 物體的運動速度愈大摩擦力愈大"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "4. 靜摩擦係數等於摩擦角的",
+        "options": [
+            "A. 正弦值",
+            "B. 餘弦值",
+            "C. 正切值",
+            "D. 餘弦值"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "5. 如圖所示，將一重量為30N之物體A置於一斜面上，其兩端分別用兩彈簧加以支撐，並維持靜力平衡，若彈簧一與彈簧二之受力狀態分別為受4N之壓力與8N之拉力，試問此時物體A所受之摩擦力為多少N？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176127560904622094/image.png?ex=656dbd25&is=655b4825&hm=45d38bf065616a0a80584010d518d7a4af6d4d47b01f3f79391ff64f0507ee0e&",
+        "options": [
+            "",
+            "A. 3",
+            "B. 4",
+            "C. 18",
+            "D. 22"
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "question": "6. 當物體置於平面，受水平推力P作用，令物體與平面之間摩擦力為f，如圖所示為水平推力P與摩擦力f之關係示意圖，下列敘述何者正確？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176133826464976946/image.png?ex=656dc2fb&is=655b4dfb&hm=ba1513fae0d796a003dd940a2821a9c98191971720c0b228773584c0b6092e82&",
+        "options": [
+            "A. 在區間(I)，物體是運動的",
+            "B. fb是最大靜摩擦力",
+            "C. fa是動摩擦力",
+            "D. θ角度一定是45°"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "7. 如圖所示，一物體置於平板上，將平板逐漸升高，當上升角度為45°時，物體開始向下滑動，則此時物體與平板間之靜摩擦係數為何？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176138312789008394/image.png?ex=656dc729&is=655b5229&hm=cf71e4459ff612b2ee8332f1a1dc22e0eb0464251f47f7c196db96a8b4a50f0a&",
+        "options": [
+            "A. 0.7",
+            "B. 0.8",
+            "C. 0.9",
+            "D. 1.0"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "8. 兩物體間，由滑動摩擦變為滾動摩擦，對摩擦力有什麼影響？",
+        "options": [
+            "A. 變大",
+            "B. 變小",
+            "C. 不變",
+            "D. 不一定"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "9. 有關摩擦下列何者正確？",
+        "options": [
+            "A. 物體與接觸面之摩擦力恆為定值，與物體運動狀態無關",
+            "B. 摩擦力之方向與物體運動方向恆相反",
+            "C. 動摩擦係數恆大於最大靜摩擦係數",
+            "D. 摩擦力與接觸面積成正比"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "10. 有關摩擦力與作用於物體之外力的關係，下列敘述何者正確？",
+        "options": [
+            "A. 一般而言，動摩擦係數大於最大靜摩擦係數",
+            "B. 當外力增加時，此時摩擦力即等於動摩擦係數",
+            "C. 當外力增加至物體即將發生移動時，此時的摩擦力稱為最大動摩擦係數",
+            "D. 當物體產生滑動狀態時，此時的摩擦力較最大靜摩擦力小"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "11. 一物體重量為W置於水平面上，靜摩擦係數為μ，若物體受一水平拉力，在物體仍然靜止未達滑動之前，其摩擦力之大小",
+        "options": [
+            "A. 等於μW",
+            "B. 比拉力小",
+            "C. 與此拉力相等",
+            "D. 比拉力大"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "12. 下列有關摩擦力之敘述，何者正確？",
+        "options": [
+            "A. 物體與摩擦面接觸面積越大摩擦力越大",
+            "B. 物體靜止時並無摩擦力",
+            "C. 摩擦力與物體運動方向平行",
+            "D. 天氣越熱摩擦力越小"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "13. 下列敘述何者正確？",
+        "options": [
+            "A. 動摩擦係數大於靜摩擦係數",
+            "B. 靜止角正切值等於靜摩擦係數",
+            "C. 接觸面越大，則摩擦力也越大",
+            "D. 靜摩擦力等於靜摩擦係數乘以正向力"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "14. 關於乾燥表面間的摩擦特性，依庫倫(Coulomb)之研究結果，下列敘述何者錯誤？",
+        "options": [
+            "A. 最大靜摩擦力與接觸面之正壓力大小成正比",
+            "B. 動摩擦力與接觸面正壓力大小成正比",
+            "C. 兩物體接觸面間之最大靜摩擦力與接觸面積大小成正比",
+            "D. 二物體之接觸面愈粗糙，其摩擦係數愈大，摩擦力也愈大"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "15. 有關乾摩擦下列敘述何者不正確？",
+        "options": [
+            "A. 動摩擦係數與滑動速度無關",
+            "B. 摩擦力與接觸面積大小無關",
+            "C. 摩擦力與接觸正壓力成正比",
+            "D. 動摩擦係數大於最大靜摩擦係數"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "16. 兩相互接觸之物體，其摩擦力之大小與下列何者成正比？",
+        "options": [
+            "A. 接觸面積之大小",
+            "B. 接觸面間正壓力之大小",
+            "C. 滑動速度之快慢",
+            "D. 接觸時間之長短"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "17. 下列有關摩擦的敘述，哪一個正確？",
+        "options": [
+            "A. 接觸面越大，則摩擦力越大",
+            "B. 靜摩擦力等於靜摩擦係數乘以正壓力",
+            "C. 螺旋之導程角α，摩擦角φ，當φ＞α時螺旋起重機才可使用",
+            "D. 動摩擦力大於最大靜摩擦力"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "18. 下列有關摩擦力之敘述，何者錯誤？",
+        "options": [
+            "A. 摩擦力的大小與接觸面的大小無關",
+            "B. 摩擦力的大小與接觸面的乾濕程度無關",
+            "C. 摩擦力的大小與接觸面的材質有關",
+            "D. 摩擦力的大小與接觸面的粗糙度有關"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "19. 下列何者敘述何者正確？",
+        "options": [
+            "A. 摩擦力之方向與物體運動方向相同",
+            "B. 接觸面越大，則摩擦力也越大",
+            "C. 靜止角正切值等於靜摩擦係數",
+            "D. 靜摩擦力等於靜摩擦係數除以正向力"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "20. 下列有關摩擦之敘述，何者錯誤？",
+        "options": [
+            "A. 動摩擦係數小於靜摩擦係數",
+            "B. 摩擦角愈大，摩擦力則愈大",
+            "C. 摩擦力與接觸面大小無關",
+            "D. 靜止角和摩擦角常不相等"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "21. 下列何者不是直線運動？",
+        "options": [
+            "A. 等加速度運動",
+            "B. 等減速度運動",
+            "C. 自由落體",
+            "D. 拋射體運動"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "22. 下列何種物理量不是運動學討論的範圍？",
+        "options": [
+            "A. 位移",
+            "B. 速度",
+            "C. 力",
+            "D. 時間"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "23. 某人在半徑為r的圓周上繞了一圈，回到原點，則其 ( 位移 #小貼心) 為",
+        "options": [
+            "A. 零",
+            "B. 2πr",
+            "C. πr",
+            "D. r"
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "question": "24. 某人在半徑為r的圓周上繞了一圈，回到原點，則其 ( 路徑 #小貼心) 為",
+        "options": [
+            "A. 零",
+            "B. 2πr",
+            "C. πr",
+            "D. r"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "25. 一物體的速度V與時間t的關係，如圖所示，下列敘述何者錯誤？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176144509889949776/image.png?ex=656dccee&is=655b57ee&hm=9011de6b9e7c322250d5903776656af766e2f910016019f1bfa99b06db93bc03&",
+        "options": [
+            "A. AB段表示為等加速度運動",
+            "B. BC段表示為等速度運動",
+            "C. AB段表示位移和時間t的一次方成正比",
+            "D. BC段表示加速度為零"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "26. A、B兩車在同一條筆直公路上行駛且在同一地點，但不同時出發，兩車的速度(V)及時間(t)的關後如圖所示，則下列敘述何者錯誤？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176145088661950524/image.png?ex=656dcd78&is=655b5878&hm=534f6580881a28e8211674277ad1b6aea353cc05e44c8ff9d2abd84fbd49e4db&",
+        "options": [
+            "A. A、B兩車皆做等加速度運動",
+            "B. 甲點表示A、B兩車在此時間會合",
+            "C. B車加速度大於A車",
+            "D. A車先出發；B車再跟著出發"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "27. 自由落體，落下時間經歷一秒及經歷二秒的距離比為",
+        "options": [
+            "A. 1：2",
+            "B. 1：3",
+            "C. 1：4",
+            "D. 1：5 "
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "28. 自由落體是",
+        "options": [
+            "A. 等速運動",
+            "B. 等加速運動",
+            "C. 減速運動",
+            "D. 變加速運動 "
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "29. 若v代表速度，a為加速度，S為位移，t表時間，則下列哪一個運動方式與圖相同？",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176146026311196752/image.png?ex=656dce58&is=655b5958&hm=4466f9be1df48dfbea241556b2e0db8e1fdbf5378f261bd70cf186b8baf870e0&",
+        "options": [
+            "A. https://cdn.discordapp.com/attachments/1129030772154708029/1176146119781265498/image.png?ex=656dce6e&is=655b596e&hm=9eb88b5aaea6c45453d938c69aa13ef656e282c019396e90a07d789563088994&",
+            "B. https://cdn.discordapp.com/attachments/1129030772154708029/1176146199070396446/image.png?ex=656dce81&is=655b5981&hm=e9a258bbf58568264e58fc7f628eac08041c61caad91168904c5b3e71d9d170e&",
+            "C. https://cdn.discordapp.com/attachments/1129030772154708029/1176146291651248218/image.png?ex=656dce97&is=655b5997&hm=580d340a63b882af120c5fb787b3e73089d8fac5d848c08819e7f843f16f0412&",
+            "D. https://cdn.discordapp.com/attachments/1129030772154708029/1176146370189602927/image.png?ex=656dceaa&is=655b59aa&hm=cebe351158e7dbb26f5f8a88ef139d0259cdad440a9a1bcefa2b481c18c65395&"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "30. 如圖，一物由靜止，先後自同一高度而斜度不同的光滑斜面，滑至斜面底端時，則",
+        "URL": "https://cdn.discordapp.com/attachments/1129030772154708029/1176146674398269470/image.png?ex=656dcef2&is=655b59f2&hm=025ce53dac88c1995f7ddac625c1fc4dc48dce6239ae2d5acf8f23a23d3fdda0&",
+        "options": [
+            "A. 所需時間相同",
+            "B. 末速相同",
+            "C. 斜面長者末速較大",
+            "D. 斜面短者末速較大"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "31. 如圖所示，一火車沿直線，自甲站開至乙站，其位置時間圖中，代表等加速度運動的哪一段曲線？",
+        "URL": "https://cdn.discordapp.com/attachments/1176146945673285653/1176147602417393664/image.png?ex=656dcfd0&is=655b5ad0&hm=8003b428f9cf5bc8bf6a04d0fd8221c808e777c7fb66b56023d4dddced97d9aa&",
+        "options": [
+            "",
+            "A. OA",
+            "B. AB",
+            "C. BC",
+            "D. OB"
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "question": "32. 在沒有摩擦情況下，物體自同一高度，由靜止沿著不同斜度的光滑斜面下滑，則下列敘述何者正確？",
+        "options": [
+            "A. 物體滑到底端所需的時間均相同",
+            "B. 物體滑到底端的末速均相同",
+            "C. 斜度大者，物體滑到底端的末速大",
+            "D. 斜度大者，物體滑到底端的末速小"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "33. 由物體運動方程式V＝8t＋1可知其加速度為",
+        "options": [
+            "A. 0",
+            "B. 8",
+            "C. 1",
+            "D. 無法判知"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "34. 速度與時間之關係如圖，則其為",
+        "URL": "https://cdn.discordapp.com/attachments/1176146945673285653/1176149267975520316/image.png?ex=656dd15d&is=655b5c5d&hm=424677a4333ec9c1ed42d050848f4af9ce41037fd9f0410b35553dc234598ca8&",
+        "options": [
+            "A. 等加速度",
+            "B. 變形之等速運動",
+            "C. 等加速度運動及等減速度運動",
+            "D. 等加速度運動及等速運動"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "35. 物體由靜止自同一高度沿不同斜度之光滑斜面下滑，滑至底端時",
+        "options": [
+            "A. 所需時間相同",
+            "B. 末速相同",
+            "C. 斜面長者末速大",
+            "D. 斜面長者末速小"
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "36. 物體自空中自由落下，設第1秒內所行距離S1，第二秒內所行距離S2，第三秒內行S3，則S1：S2：S3為",
+        "options": [
+            "A. 1：4：9",
+            "B. 1：2：3",
+            "C. 1：1：1",
+            "D. 1：3：5"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "37. 自由落體運動初速為零，則下降時間與下降距離的關係為",
+        "options": [
+            "A. 兩者成正比",
+            "B. 兩者成反比",
+            "C. 時間與距離平方成正比",
+            "D. 時間與距離平方根成正比"
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "question": "38. 物體自由下，其第1秒、第2秒、第3秒所行距離之比為",
+        "options": [
+            "A. 1：2：3",
+            "B. 1：2：4",
+            "C. 1：3：5",
+            "D. 1：3：6"
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "question": "39. 在阿里山上以V0鉛直拋下一石子，同時使一棒球自由落下，則",
+        "options": [
+            "A. 兩者同時落地",
+            "B. 石子先落地",
+            "C. 棒球先落地",
+            "D. 如球重大於石子重，則球先落地 "
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "question": "40. 關於鉛直上拋，下列何者有誤？ ",
+        "options": [
+            "A. 到達最高點時，速度和加速度皆為零",
+            "B. 加速度為負的重力加速度",
+            "C. 上、下",
+            "D. "
+        ],
+        "correctAnswer": "A"
+    },
 ];
 
 var currentQuestionIndex = 0;
